@@ -21,7 +21,9 @@
 EOT;
     
     while($rek = $dane->fetch_object()){
-        echo "<tr><td>$rek->nazwskio</td><td>$rek->imie</td><td>$rek->data</td></tr>";
+        echo "<tr><td>$rek->nazwisko</td><td>$rek->imie</td><td>$rek->data</td></tr>";
     }
+    echo "</table>";
+    $link->close();
 
 ?>
